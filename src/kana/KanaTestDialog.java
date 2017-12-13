@@ -5,6 +5,8 @@ import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -63,6 +65,13 @@ public class KanaTestDialog extends JDialog implements ActionListener {
 			}
 		});
 		timerT.start();
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent arg0) {
+				timerT.stop();
+				setVisible(false);
+				dispose();
+			}
+		});
 		
 		lblKana.setBounds(47, 26, 250, 150);
 		lblKana.setFont(new Font("MS Mincho", Font.BOLD, 120));
