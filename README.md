@@ -1,6 +1,6 @@
-# kana
+# Kana
 Kana Test (Hiragana &amp; Katakana)
 
 # Requirements
-- jre 6 or above
+- java 6 or above
 - MS Mincho font in your system
