@@ -18,6 +18,7 @@ public class KanaAboutDialog extends JDialog {
 		super(parent, parent.getTitle() + " " + op, true);
 		setSize(320, 200);
 		setLocationRelativeTo(parent.getParent());
+		setResizable(false);
 		setAlwaysOnTop(true);
 		setModal(true);
 		contentPane = new JPanel();

@@ -36,6 +36,7 @@ public class KanaTestDialog extends JDialog implements ActionListener {
 		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
 		setLocation((screen.width - 700) / 2, (screen.height - 590) / 2);
 		//setLocationRelativeTo(parent.getParent());
+		setResizable(false);
 		setAlwaysOnTop(true);
 		setModal(true);
 		contentPane = new JPanel();
